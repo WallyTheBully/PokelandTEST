@@ -1162,6 +1162,11 @@ Chat.loadPlugins = function () {
 		if (plugin.namefilter) Chat.namefilters.push(plugin.namefilter);
 		if (plugin.hostfilter) Chat.hostfilters.push(plugin.hostfilter);
 		if (plugin.loginfilter) Chat.loginfilters.push(plugin.loginfilter);
+			}
+	for (let file of FS('plugins-pokeland').readdirSync()) {
+		if (file.substr(-3) !== '.js') continue;
+		const pluginspokeland = require(`./plugins-pokeland/${file}`);
+		Object.assign(commands, pluginspokeland.commands);
 	}
 };
 
