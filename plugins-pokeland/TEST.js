@@ -7,7 +7,7 @@ let nl = "<br>";
 	
 // BUILD
 exports.commands = {
-	p: 'panel',
+	pp: 'panel',
 	panel : function (target, room, user, connection) {
 		// REQUESTED
 		if (!user.isStaff) return false;
