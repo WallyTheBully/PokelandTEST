@@ -1557,6 +1557,7 @@ exports.commands = {
 			"- The restart itself will take around 0.6 seconds<br />" +
 			"- Your ladder ranking and teams will not change<br />" +
 			"- We are restarting to update Pok&eacute;mon Showdown to a newer version"
+			"- Lol. Just wait it out"
 		);
 	},
 
